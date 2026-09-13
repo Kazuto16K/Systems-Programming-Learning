@@ -1,0 +1,12 @@
+# Compiler output
+a.exe
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# Build directories
+build/
+
+# Personal study plan (not for the public repo)
+PLAN.md

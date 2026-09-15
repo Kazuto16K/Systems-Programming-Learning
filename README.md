@@ -16,18 +16,20 @@ day01/   pointer lifetime & memory management
 day02/   RAII & smart pointers
 day03/   move semantics & the Rule of Five
 ...
+day12/   review + persistent key-value store warm-up
 ```
 
 Each `dayNN/` folder is a small, self-contained program focused on one
 concept, building in difficulty from basic pointer/memory handling up
-through templates, hashing, threading, and networking.
+through templates, hashing, threading, and networking, across 12 sessions.
 
-## Capstone
+## Capstone — minidis
 
-After the daily exercises, a larger incremental project (`sysmon/`) ties
-several of these concepts together into a live terminal process monitor
-for Windows — process listing, CPU/memory sampling, a background sampling
-thread, and a live-updating dashboard.
+After the daily exercises, a larger incremental project (`minidis/`) ties
+several of these concepts together into a small in-memory key-value server
+in the shape of Redis: a TCP server with a custom command protocol,
+thread-per-connection concurrency, TTL/expiry, and crash-safe persistence
+via a snapshot + append-only write log. Built over 7 sessions.
 
 ## Building
 
